@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/css/styles.css';
+@import './assets/css/ie10-viewport-bug-workaround.css';
+@import './assets/font-awesome-4.6.3/css/font-awesome.min.css'; 
+/* @import './assets/css/bootstrap.min.css'; */
+/* @import './assets/css/bootstrap.css';  */
