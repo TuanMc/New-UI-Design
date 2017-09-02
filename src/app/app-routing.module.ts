@@ -4,14 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 // import component:
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import{BreadscrumbComponent} from './body/revenue/breadscrumb/breadscrumb.component';
 
 const routes: Routes = [
-    {path: '', redirectTo:'/home', pathMatch:'full'},
+    {path: '', redirectTo:'home', pathMatch:'full'},
     {path: 'home', component: LandingPageComponent },
     {path: 'Home', component: LandingPageComponent },
-    {path: 'revenue', loadChildren:'app/body/revenue.module' },
-    {path: 'Revenue', loadChildren:'app/body/revenue.module' },
+    {path: 'revenue', loadChildren:'app/body/revenue/revenue.module#RevenueManagement' },
+    {path: 'Revenue', loadChildren:'app/body/revenue/revenue.module#RevenueManagement' },
     
 ]
 

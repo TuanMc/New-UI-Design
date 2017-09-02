@@ -5,3 +5,9 @@
 .progress-background-color{
     background-color: #00BCF2 !important;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #FF8C00;
+    border-color: #FF8C00;
+}

@@ -1,0 +1,168 @@
+<div class="container padding-top-40 padding-bottom-50">
+    <h1 class="finpal-h1">Match revenue data</h1>
+    <p class="lead">Automatic matching process has completed. The following items need your attention.</p>
+    <div class="table-responsive">
+        <table class="table table-striped revenue-management-table">
+            <!--Table head-->
+            <thead class="green-background">
+                <tr>
+                    <td>Date</td>
+                    <th>Client</th>
+                    <th>Product #</th>
+                    <th>Product name</th>
+                    <th>Adviser</th>
+                    <th>Adviser %</th>
+                    <th>Adviser revenue</th>
+                    <th>Adviser tax</th>
+                    <th>Gross revenue</th>
+                    <th>Gross tax</th>
+                    <th>Product provider</th>
+                    <th>Revenue type</th>
+                    <th>Opportunity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <!--Table head-->
+            <!--Table body-->
+            <tbody>
+                <tr>
+                    <td>12 Feb 2017</td>
+                    <td>Test Ale1556</td>
+                    <td>0067269L20133</td>
+                    <td>Test Client Asset</td>
+                    <td>Handley Stephen</td>
+                    <td>0.95</td>
+                    <td>7.38</td>
+                    <td>0.74</td>
+                    <td>7.77</td>
+                    <td>0.78</td>
+                    <td>AMP</td>
+                    <td>Ongoing</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#match-modal">Match</button></td>
+                </tr>
+                <tr>
+                    <td>12 Feb 2017</td>
+                    <td>Test Ale1556</td>
+                    <td>0067269L20133</td>
+                    <td>Test Client Asset</td>
+                    <td>Handley Stephen</td>
+                    <td>0.95</td>
+                    <td>7.38</td>
+                    <td>0.74</td>
+                    <td>7.77</td>
+                    <td>0.78</td>
+                    <td>AMP</td>
+                    <td>Ongoing</td>
+                    <td></td>
+                    <td><button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#match-modal">Match</button></td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+        </table>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#confirm-import">Import to CRM</button>
+
+        <div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="MatchModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title finpal-h2" id="MatchModalLabel">Match entity</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <table class="table table-striped revenue-management-table">
+                                    <!--Table body-->
+                                    <tbody>
+                                        <tr>
+                                            <th class="text-right" width="33%">Owner</th>
+                                            <td>Handley, Stephen</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Date</th>
+                                            <td>13-Feb-2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Adviser Percentage</th>
+                                            <td>95.00%</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Adviser Revenue</th>
+                                            <td>$7.38</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Adviser Tax</th>
+                                            <td>$0.74</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Gross Revenue</th>
+                                            <td>$7.77</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Gross Tax</th>
+                                            <td>$0.78</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Product Provider</th>
+                                            <td>AMP</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Client</th>
+                                            <td>Test Ale1556</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Revenue Category</th>
+                                            <td>
+                                                <select class="form-control">
+                                                    <option>Mixed</option>
+                                                    <option>Insurance</option>
+                                                    <option>Investment</option>
+                                                    <option>Fee for service</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Client Asset</th>
+                                            <td><input type="text" class="form-control" id=""></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-right">Revenue Type</th>
+                                            <td>Ongoing</td>
+                                        </tr>
+                                    </tbody>
+                                    <!--Table body-->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info">Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+
+        <div class="modal fade" id="confirm-import" tabindex="-1" role="dialog" aria-labelledby="MatchModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="warning-title" id="MatchModalLabel">Missing data</h4>
+                        <p>Product numbers missing from some records. Continue anyway?</p>
+                        <button type="button" class="btn btn-info">Ok</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+    </div>
